@@ -1,0 +1,15 @@
+{
+  "name": "@erwanriou/ticket-shop-common",
+  "version": "0.0.2",
+  "description": "The shared library for ticketshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "author": "Erwan Riou",
+  "license": "ISC"
+}
