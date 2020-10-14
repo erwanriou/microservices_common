@@ -1,9 +1,9 @@
 "use strict"
 
-module.exports = factory = (file) => {
+module.exports = importFactory = (file) => {
   return require(`./factory/${file}`)
 }
 
-module.exports = middlewares = (file) => {
+module.exports = importMiddlewares = (file) => {
   return require(`./middlewares/${file}`)
 }
