@@ -1,8 +1,8 @@
-echo ":: COMMIT AND DEPLOY CHANGES"
+echo ":: COMMIT CHANGES"
 git add .
 git commit -m '[Library] - update version'
-git push
-echo ":: UPDATE NPM VERSION"
+echo ":: UPDATE NPM VERSION AND PUSH REPOSITORY"
 npm version patch
+git push
 echo ":: PUBLISH TO NPM"
 npm publish
