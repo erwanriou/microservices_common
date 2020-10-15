@@ -1,5 +1,3 @@
-"use strict"
-
 module.exports = importFactory = (file) => {
   return require(`./factory/${file}`)
 }
