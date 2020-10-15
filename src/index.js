@@ -1,7 +1,3 @@
-module.exports = importFactory = (file) => {
-  return require(`./factory/${file}`)
-}
-
-module.exports = importMiddlewares = (file) => {
-  return require(`./middlewares/${file}`)
+module.exports = importCommon = (folder, file) => {
+  return require(`./${folder}/${file}`)
 }
