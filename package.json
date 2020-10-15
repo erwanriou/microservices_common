@@ -6,6 +6,10 @@
   "scripts": {
     "deploy": " sh scripts/deploy.sh"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erwanriou/ticket-shop-common.git"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
