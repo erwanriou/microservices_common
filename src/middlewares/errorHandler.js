@@ -7,7 +7,7 @@ module.exports = (err, req, res, next) => {
   } else {
     // CASE ERROR IS NOT HANDLED
     res
-      .status(500)
+      .status(400)
       .send({ errors: [{ message: `Something when wrong: ${err}` }] })
   }
   next()
