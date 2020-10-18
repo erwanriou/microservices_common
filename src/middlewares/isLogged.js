@@ -1,6 +1,5 @@
 const jwt = require("jsonwebtoken")
-const Errors = require("../factory/errors")
-const { NotAuthorizedError } = Errors
+const { NotAuthorizedError } = require("../factory/errors")
 
 module.exports = (req, res, next) => {
   if (!req.user) {

@@ -1,5 +1,4 @@
-const Errors = require("../factory/errors")
-const { CustomError } = Errors
+const { CustomError } = require("../factory/errors")
 
 module.exports = (err, req, res, next) => {
   if (err instanceof CustomError) {

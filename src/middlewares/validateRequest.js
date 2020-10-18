@@ -1,6 +1,6 @@
 const validator = require("express-validator")
-const Errors = require("../factory/errors")
-const { RequestValdationError } = Errors
+const { RequestValdationError } = require("../factory/errors")
+
 
 module.exports = (req, res, next) => {
   const errors = validator.validationResult(req)
