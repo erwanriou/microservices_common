@@ -11,7 +11,7 @@ class Publisher {
         if (err) {
           return reject(err)
         }
-        console.log("Event Published to ", this.subject)
+        console.log(`Event Published: ${this.subject}`)
         resolve()
       })
     })
