@@ -1,5 +1,7 @@
-// ABSTRACT CLASS FOR EVENT LISTENER
+// ABSTRACT CLASS FOR LISTEN NATS EVENT
 class Listener {
+  subject // ABSTRACT
+  queueGroupName // ABSTRACT
   #client // PRIVATE
   _ackWait // PROTECTED
 
