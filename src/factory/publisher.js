@@ -6,7 +6,7 @@ class Publisher {
     this.#client = client
   }
   publish(data) {
-    this.#client.publish(this.subject, data, () => {
+    this.#client.publish(this.subject, JSON.stringify(data), () => {
       console.log("Event Published")
     })
   }
