@@ -1,6 +1,6 @@
 {
   "name": "@erwanriou/ticket-shop-common",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "The shared library for ticketshop",
   "main": "src/index.js",
   "scripts": {
