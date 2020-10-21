@@ -14,5 +14,9 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "author": "Erwan Riou",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.10.9",
+    "node-nats-streaming": "^0.3.2"
+  }
 }
