@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 const { NatsWrapper } = require("./eventbus")
 
-module.exports = async () => {
+module.exports = async client => {
   try {
     // CONNECT NATS
     await NatsWrapper.connect(
@@ -23,7 +23,7 @@ module.exports = async () => {
       useCreateIndex: true,
       useFindAndModify: false
     })
-    console.log("Tickets Mongodb Connected")
+    console.log(`${client} Mongodb Connected`)
   } catch (e) {
     console.error(e)
   }
