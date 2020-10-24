@@ -1,7 +1,9 @@
 // DEFINE ALL LISTENER SUBJECTS
 const Subject = {
   TICKET_CREATED: "ticket:created",
-  TICKET_UPDATED: "ticket:updated"
+  TICKET_UPDATED: "ticket:updated",
+  ORDER_CREATED: "order:created",
+  ORDER_CANCELLED: "order:canceled"
 }
 
 // DEFINE ALL LISTENER QUEUE GROUP NAMES
