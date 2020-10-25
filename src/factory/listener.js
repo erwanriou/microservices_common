@@ -3,7 +3,7 @@ class Listener {
   subject // ABSTRACT
   queueGroupName // ABSTRACT
   #client // PRIVATE
-  _ackWait // PROTECTED
+  _ackWait = 5 * 1000 // PROTECTED
 
   constructor(client) {
     this.#client = client
