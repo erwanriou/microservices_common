@@ -9,7 +9,8 @@ const Subject = {
 // DEFINE ALL LISTENER QUEUE GROUP NAMES
 const QueueGroupName = {
   PAYMENT_SERVICE: "payment-service",
-  ORDER_SERVICE: "order-service"
+  ORDER_SERVICE: "order-service",
+  TICKET_SERVICE: "ticket-service"
 }
 
 exports.Subject = Subject
