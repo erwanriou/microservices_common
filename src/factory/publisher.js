@@ -1,7 +1,7 @@
 // ABSTRACT CLASS FOR PUBLISH NATS EVENT
 class Publisher {
   subject // ABSTRACT
-  _client // PRIVATE
+  _client // PROTECTED
   constructor(client) {
     this._client = client
   }

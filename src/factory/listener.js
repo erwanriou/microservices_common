@@ -2,7 +2,7 @@
 class Listener {
   subject // ABSTRACT
   queueGroupName // ABSTRACT
-  _client // PRIVATE
+  _client // PROTECTED
   _ackWait = 5 * 1000 // PROTECTED
 
   constructor(client) {
