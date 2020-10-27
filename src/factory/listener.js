@@ -2,16 +2,16 @@
 class Listener {
   subject // ABSTRACT
   queueGroupName // ABSTRACT
-  #client // PRIVATE
+  _client // PRIVATE
   _ackWait = 5 * 1000 // PROTECTED
 
   constructor(client) {
-    this.#client = client
+    this._client = client
   }
 
   // DEFAULT CONFIGURATION OF NATS STREAMING
   subscriptionOption() {
-    return this.#client
+    return this._client
       .subscriptionOptions()
       .setDeliverAllAvailable()
       .setManualAckMode(true)
@@ -20,7 +20,7 @@ class Listener {
   }
 
   listen() {
-    const subscription = this.#client.subscribe(
+    const subscription = this._client.subscribe(
       this.subject,
       this.queueGroupName,
       this.subscriptionOption()
