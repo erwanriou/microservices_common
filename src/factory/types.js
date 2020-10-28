@@ -10,7 +10,8 @@ const Subject = {
 const QueueGroupName = {
   PAYMENT_SERVICE: "payment-service",
   ORDER_SERVICE: "order-service",
-  TICKET_SERVICE: "ticket-service"
+  TICKET_SERVICE: "ticket-service",
+  EXPIRATION_SERVICE: "expiration-service"
 }
 
 exports.Subject = Subject
