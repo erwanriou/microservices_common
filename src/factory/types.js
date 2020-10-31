@@ -4,7 +4,8 @@ const Subject = {
   TICKET_UPDATED: "ticket:updated",
   ORDER_CREATED: "order:created",
   ORDER_CANCELLED: "order:canceled",
-  EXPIRATION_COMPLETED: "expiration:completed"
+  EXPIRATION_COMPLETED: "expiration:completed",
+  PAYMENT_CREATED: "payment:created"
 }
 
 // DEFINE ALL LISTENER QUEUE GROUP NAMES
